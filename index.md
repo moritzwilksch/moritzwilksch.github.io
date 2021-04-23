@@ -8,8 +8,6 @@ title: "Home of the Blog"
 # Posts
 
 
-# Collection of Posts
-
 <ul>
   {% for post in site.posts %}
     <li>

@@ -6,3 +6,7 @@ categories: Test Setup
 ---
 
 # First Post
+
+Latex:  
+$$ \nabla_\boldsymbol{x} J(\boldsymbol{x}) $$
+
