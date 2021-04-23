@@ -27,7 +27,7 @@ def f(x):
   return x**2
 ```
 
-Latex:
+Latex 2:
 {% raw %}
 $$y = m \cdot x + n$$
 {% endraw %}
