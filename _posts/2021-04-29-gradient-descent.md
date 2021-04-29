@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "Introduction to Gradient Descent"
-date:   "2021-04-29 09:45"
+date:   2021-04-29 09:45 +0200
 categories: optimization machine-learning
 ---
 
