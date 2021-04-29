@@ -2,7 +2,7 @@
 layout: post
 title:  "Introduction to Gradient Descent"
 date:   2021-04-29 09:45 +0200
-categories: machine-learning
+tags: machine-learning optimization gradient-desent
 ---
 
 One paramount principle underlying many, if not most, of the machine learning algorithms applied in practice is Gradient Descent. But how does this optimization technique work under the hood? Let’s figure out the intuition, the math, and the code that goes into this algorithm.
