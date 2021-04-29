@@ -21,8 +21,7 @@
 title: Moritz' Blog
 email: mo-wilksch@t-online.de
 description: >- # this means to ignore newlines until "baseurl:"
-  The blog I wish I found when I started learning various Data Science and Machine Learning concepts.
-  A little bit of concepts, code and math about different Data Science concepts and Machine Learning algorithms.
+  Data Science and Machine Learning concepts, code and math.
 
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "" # the base hostname & protocol for your site, e.g. http://example.com
