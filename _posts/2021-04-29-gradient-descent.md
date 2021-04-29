@@ -74,7 +74,7 @@ Let
 
 $$f(a, b) = a^4 - 2ab + b^2 - 8$$
 
-its partial derivates (sparately deriving with respect to a, and then b) are:
+its partial derivates (separately deriving with respect to a, and then b) are:
 
 $$\frac{\partial f(x)}{ \partial a} = 4a^3 - 2b$$
 
