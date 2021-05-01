@@ -18,7 +18,7 @@ The overarching goal is to choose parameter values such that the model fits the 
 **NOTE**: while everything described in this post can be used to find either maxima or minima, it is more common to construct a loss function such that its minimum is the optimal value. Hence, we’ll just look at minima from here.
 
 ## Wait, I already know how to find minima …
-Finding minima used to be easy back in school: Given a function f, we find its local extrema by taking its derivative, setting it zero, and solve for x. Let’s take for example:  
+Finding minima used to be easy back in school: Given a function f, we find its local extrema by taking its derivative, setting it zero, and solving for x. Let’s take for example:  
 
 $$ 
 f(x) = \frac{2}{3}x^3 + 3x^2 +4x+2
@@ -45,7 +45,7 @@ Taking the approach outline above is called finding an **analytical solution**. 
 
 
 ## Gradient Descent to the Rescue!
-Gradient descent is a **numerical approach** to solving the same problem outlined above. This means that there is no single formula that we can solve to obtain an exact result, but instead, we approximate the real solution. Even if the approximation might not be perfectly the same as the analytical solution, it’s more often than not “good enough”. Usually, we do so by (naively or intelligently) trying out different values and seeing whether they constitute a “good” solution or not.
+Gradient descent is a **numerical approach** to solving the same problem outlined above. This means that there is no single formula that we can solve to obtain an exact result, but instead, we approximate the real solution. Even if the approximation might not be perfectly the same as the analytical solution, it’s more often than not “good enough”. Usually, we do so by slowly taking small steps in the direction of the minimum until we reach it.
 The gradient descent algorithm works as follows:
 1.	Start at a random value of x.
 2.	Take a small step in **the direction of the minimum**
