@@ -4,7 +4,7 @@ title:  "Monte Carlo Simulations: Math for Lazy People"
 date:   2021-09-05 22:45 +0200
 tags: monte-carlo simulation
 ---
-## Monte Carlo Simulations
+
 Inspired by the gambling paradise Monte Carlo in Monaco, Monte Carlo simulations use repeated random sampling to numerically solve problems that are otherwise hard or impossible to solve. For probabilistic problems, for example, we can use a Monte Carlo simulation to simulate a complex process millions of times and record its outcome. An approximate probability distribution of the outcome can then be obtained by simply examining the relative frequencies of the observed outcomes.  
 In this post, we will solve not an impossible, but a surprisingly hard geometrical problem using Monte Carlo simulations: Calculating the area of intersection between two circles.
 
