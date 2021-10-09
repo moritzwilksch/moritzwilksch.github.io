@@ -39,6 +39,11 @@ plugins:
 
 markdown: kramdown
 
+header_pages:
+  - index.markdown
+  - blog.markdown
+  - portfolio.markdown
+
 show_excerpts: true
 # Exclude from processing.
 # The following items will not be processed, by default.
