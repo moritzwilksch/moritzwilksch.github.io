@@ -18,7 +18,7 @@ permalink: /portfolio/
 - solved problems induced by hierarchical and time-series nature of the data set
 - compared performance against traditional tabular learners
 
-**Deep Document Classification (Team Project)** ([GitHub](https://github.com/dai-anna/Duke-NLP-FinalProject))
+**Deep Document Classification, Team Project** ([GitHub](https://github.com/dai-anna/Duke-NLP-FinalProject))
 - Benchmarked LDA and Bi-directional GRU neural network with self-trained word embeddings on classifying documents into topics
 - Used Twitter API to collect tweets for seven distinct topics
 - Let LDA infer latent document-topic and word-topic distributions and used these for classification
