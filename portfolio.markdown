@@ -32,7 +32,7 @@ permalink: /portfolio/
 **AWS Cloud-Native Text Generator, Team Project** ([GitHub](https://github.com/dai-anna/AWSCloud-TweetGenerator))
 - Built end-to-end cloud-based data pipeline to collect and clean Tweets and (re-)train and deploy machine learning model for generating tweets for currently trending hashtags
 - Pipeline is orchestrated to run daily and is deployed as a web application as well as a Twitter bot
-- Used AWS Lambda, S3, EC2, ECR, EventBridge, and Batch as well as IaC (python SDK) and Docker follwing CI best practices using GitHub Actions
+- Used AWS Lambda, S3, EC2, ECR, EventBridge, and Batch as well as IaC (python CDK) and Docker following CI best practices using GitHub Actions
 
 **Durham News Analysis on AWS** ([GitHub](https://github.com/moritzwilksch/AWS-DurhamNewsAnalysis))
 - Built webscraper that runs locally or in AWS Lambda to scrape a local news website for Durham, NC
