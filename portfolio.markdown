@@ -6,7 +6,7 @@ permalink: /portfolio/
 
 ### Research Project
 **The Predictive Power of Social Sentiment Regarding Short-Term Stock Returns** ([GitHub](https://github.com/moritzwilksch/SocialMediaBusinessAnalytics) | [Research Report](https://github.com/moritzwilksch/SocialMediaBusinessAnalytics/raw/main/SMRP_Report_Submission.pdf))  
-*To be published at the student track at Internationale Tagung Wirtschaftsinformatik ([WI22](https://wi22.de))*
+***To be published at the student track at Internationale Tagung Wirtschaftsinformatik ([WI22](https://wi22.de))***
 - Collected >5M tweets mentioning the 10 most discussed stocks on Twitter
 - Trained a custom sentiment analysis model on TF-IDF representation of manually annotated subset to extract domain-specific financial sentiment
 - Used sentiment and traditional technical indicators to forecast next-day stock return using LightGBM and Random Forests
@@ -23,6 +23,10 @@ permalink: /portfolio/
 - Used Twitter API to collect tweets for seven distinct topics
 - Let LDA infer latent document-topic and word-topic distributions and used these for classification
 - Assessed the learned semantics of the word embedding vectors in the neural network
+
+**Text Generation: Star Trek Scripts** ([GitHub](https://github.com/moritzwilksch/StarTrekWriter) | [Blog Post](https://moritzwilksch.github.io/2022/01/14/star-trek-text-generation.html))
+- Used Recurrent Neural Network (GRU) for generating new *Star Trek: The Next Generation* scripts
+- Next-token prediction on corpus of scripts tokenized with BERT tokenizer
 
 **Yelp Review Classification** ([GitHub](https://github.com/moritzwilksch/DL_Project_Yelp))
 - Used Convolutional Neural Networks for text classifications of Yelp reviews
