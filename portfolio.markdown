@@ -6,7 +6,7 @@ permalink: /portfolio/
 
 ### Research Project
 **The Predictive Power of Social Sentiment Regarding Short-Term Stock Returns** ([GitHub](https://github.com/moritzwilksch/SocialMediaBusinessAnalytics) | [Research Report](https://github.com/moritzwilksch/SocialMediaBusinessAnalytics/raw/main/SMRP_Report_Submission.pdf))  
-***To be published at the student track at Internationale Tagung Wirtschaftsinformatik ([WI22](https://wi22.de))***
+***Published at the student track at Internationale Tagung Wirtschaftsinformatik ([WI22](https://wi22.de)). Download the paper [here](https://aisel.aisnet.org/wi2022/student_track/student_track/38/)***
 - Collected >5M tweets mentioning the 10 most discussed stocks on Twitter
 - Trained a custom sentiment analysis model on TF-IDF representation of manually annotated subset to extract domain-specific financial sentiment
 - Used sentiment and traditional technical indicators to forecast next-day stock return using LightGBM and Random Forests
