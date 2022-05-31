@@ -18,6 +18,7 @@ A little bit of concepts, code and math about different Data Science and Machine
 - 🔎 my [LinkedIn](https://www.linkedin.com/in/moritzwilksch)
 - 💻 my [GitHub](https://www.github.com/moritzwilksch)
 - 🎓 my [first publication](https://aisel.aisnet.org/wi2022/student_track/student_track/38/)
+
 ---
 <br>
 <p align="center">
