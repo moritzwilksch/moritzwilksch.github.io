@@ -4,9 +4,14 @@ title: Portfolio
 permalink: /portfolio/
 ---
 
-### Research Project
+### Research Projects
+**[Master Thesis, WIP] pyFin-Sentiment: Sentiment Analysis of Financial Social Media Posts** ([GitHub](https://github.com/moritzwilksch/MasterThesis))
+- collected and annotated data set of 10,000 tweets
+- built sentiment analysis (SA) model that works on social media posts discussing investment decisions
+- benchmarked models against SoTA from the domain of finance SA or generic social media SA
+
 **The Predictive Power of Social Sentiment Regarding Short-Term Stock Returns** ([GitHub](https://github.com/moritzwilksch/SocialMediaBusinessAnalytics) | [Research Report](https://github.com/moritzwilksch/SocialMediaBusinessAnalytics/raw/main/SMRP_Report_Submission.pdf))  
-***Published at the student track at Internationale Tagung Wirtschaftsinformatik ([WI22](https://wi22.de)). Download the paper [here](https://aisel.aisnet.org/wi2022/student_track/student_track/38/)***
+*Published at the student track at Internationale Tagung Wirtschaftsinformatik ([WI22](https://wi22.de)). Download the paper [here](https://aisel.aisnet.org/wi2022/student_track/student_track/38/)*
 - Collected >5M tweets mentioning the 10 most discussed stocks on Twitter
 - Trained a custom sentiment analysis model on TF-IDF representation of manually annotated subset to extract domain-specific financial sentiment
 - Used sentiment and traditional technical indicators to forecast next-day stock return using LightGBM and Random Forests
