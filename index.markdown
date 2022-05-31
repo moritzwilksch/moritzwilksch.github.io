@@ -11,9 +11,13 @@ I'm **Moritz Wilksch**. A graduate student of Business Informatics in Potsdam :d
 - :money_with_wings: A fan of blog-style Data Science tutorials compared to pay-walled Medium articles or lengthy YouTube videos. 
 
 This is why I started this blog.
-A little bit of concepts, code and math about different Data Science and Machine Learning algorithms and ideas. Feel free to explore [my Blog posts](/blog) and my [Portfolio](/portfolio)
+A little bit of concepts, code and math about different Data Science and Machine Learning algorithms and ideas. Feel free to explore [the Blog posts](/blog)!
 
-
+## Also Check Out...
+- 📁 my [portfolio](/portfolio)
+- 🔎 my [LinkedIn](https://www.linkedin.com/in/moritzwilksch)
+- 💻 my [GitHub](https://www.github.com/moritzwilksch)
+- 🎓 my [first publication](https://aisel.aisnet.org/wi2022/student_track/student_track/38/)
 ---
 <br>
 <p align="center">
