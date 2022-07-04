@@ -8,10 +8,10 @@ I'm **Moritz Wilksch**. A graduate student of Business Informatics in Potsdam :d
 
 - :mortar_board: Currently enrolled in a Master of Business Informatics and Digital Transformation specializing in Data Science and Machine Learning
 - :bar_chart: Passionate about using data to solve business problems
-- :money_with_wings: A fan of blog-style Data Science tutorials compared to pay-walled Medium articles or lengthy YouTube videos. 
+- 🔨 Currently working on my master thesis
 
-This is why I started this blog.
-A little bit of concepts, code and math about different Data Science and Machine Learning algorithms and ideas. Feel free to explore [the Blog posts](/blog)!
+
+If you're a fan of blog-style Data Science tutorials rather than pay-walled Medium articles or lengthy YouTube videos, check out my [Blog](/blog)!
 
 ## Also Check Out...
 - 📁 my [portfolio](/portfolio)
