@@ -56,7 +56,7 @@ permalink: /portfolio/
 - Used linear regresion and a hierarchical random-slopes model to model the relationship between apartment features and prices in R
 - Visualized random slopes on a map using GeoJSON data and `geopandas`
 
-**Duke Datathon 2021 (Winning Entry)**
+**Duke Datathon 2021 (Winning Entry)** ([GitHub](https://github.com/unsupervisedlearner1123/Duke-Datathon-2021))
 - analyzed longitudinal survey data to understand socio-economic situation of citizens across 18 Asian countries 
 - conducted extensive data cleaning to structure hundreds of text-based survey items
 - utilized factor analysis to understand how demographic characteristics relate to three latent factors, e.g. "support of a totalitarian system"
