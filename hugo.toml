@@ -1,0 +1,34 @@
+baseURL = 'https://moritzwilksch.github.io/'
+languageCode = 'en-us'
+title = 'Moritz Wilksch'
+theme = "PaperMod"
+
+[params]
+[params.profileMode]
+enabled = true
+title = "Moritz Wilksch"
+subtitle = "Data Scientist"
+imageUrl = "images/profile-pic.jpg"
+imageTitle = "profile picture"
+imageWidth = 200
+imageHeight = 200
+
+[[params.profileMode.buttons]]
+name = "About"
+url = "/about"
+
+[[params.profileMode.buttons]]
+name = "TILs"
+url = "/tils"
+
+[[params.profileMode.buttons]]
+name = "Github"
+url = "https://github.com/moritzwilksch"
+
+[[params.socialIcons]]
+name = "LinkedIn"
+url = "https://linkedin.com/in/moritzwilksch"
+
+[[params.socialIcons]]
+name = "github"
+url = "https://github.com/moritzwilksch"
