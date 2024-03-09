@@ -1,4 +1,4 @@
-baseURL = 'localhost:1313/'
+baseURL = 'https://moritzwilksch.github.io/'
 languageCode = 'en-us'
 title = 'Moritz Wilksch'
 theme = "PaperMod"
