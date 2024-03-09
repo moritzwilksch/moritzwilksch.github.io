@@ -18,6 +18,10 @@ name = "About"
 url = "/about"
 
 [[params.profileMode.buttons]]
+name = "TILs"
+url = "/tils"
+
+[[params.profileMode.buttons]]
 name = "Github"
 url = "https://github.com/moritzwilksch"
 
