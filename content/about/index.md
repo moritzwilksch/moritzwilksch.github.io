@@ -4,14 +4,14 @@ title = 'About'
 
 ## 👋 Moin! I'm Moritz.
 
-I'm a data scientist based in Berlin, Germany passionate about solving data and engineeringproblems.
+I'm a data scientist based in Berlin, Germany passionate about solving data and engineering problems.
 
 I work at [QuantCo](https://quantco.com), where I help our clients leverage machine learning to make better decisions.
 
 ## 🔎 Interests
 - learning on tabular data
 - natural language processing
-- machine learning engineering on the arrow-based data stack
+- machine learning engineering on the modern data stack
 
 
 ## 🎓 Education
