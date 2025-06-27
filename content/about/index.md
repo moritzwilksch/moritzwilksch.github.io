@@ -4,7 +4,7 @@ title = 'About'
 
 ## 👋 Moin! I'm Moritz.
 
-I'm a data scientist based in Berlin, Germany passionate about solving data and engineering problems.
+I'm a machine learning engineer based in Berlin, Germany passionate about solving data and engineering problems.
 
 I work at [QuantCo](https://quantco.com), where I help our clients leverage machine learning to make better decisions.
 
