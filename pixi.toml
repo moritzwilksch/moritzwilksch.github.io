@@ -4,9 +4,9 @@ version = "0.1.0"
 description = "personal website"
 authors = ["Moritz Wilksch <moritzwilksch@gmail.com>"]
 channels = ["conda-forge"]
-platforms = ["linux-64"]
+platforms = ["linux-64", "osx-arm64"]
 
 [tasks]
 
 [dependencies]
-hugo = ">=0.123.2,<0.124"
+hugo = ">=0.147.9,<0.148"
