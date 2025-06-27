@@ -7,7 +7,7 @@ theme = "PaperMod"
 [params.profileMode]
 enabled = true
 title = "Moritz Wilksch"
-subtitle = "Data Scientist"
+subtitle = "Machine Learning Engineer"
 imageUrl = "images/profile-pic.jpg"
 imageTitle = "profile picture"
 imageWidth = 200
