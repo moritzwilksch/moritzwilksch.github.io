@@ -1,0 +1,31 @@
+# Verify Hugo site builds successfully on PRs
+name: Build Hugo site
+
+on:
+  pull_request:
+    branches:
+      - main
+
+defaults:
+  run:
+    shell: bash
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+        with:
+          submodules: recursive
+          fetch-depth: 0
+      - name: Setup Pixi
+        uses: prefix-dev/setup-pixi@v0.8.1
+      - name: Build with Hugo
+        env:
+          HUGO_ENVIRONMENT: production
+          HUGO_ENV: production
+        run: |
+          pixi run hugo \
+            --gc \
+            --minify
