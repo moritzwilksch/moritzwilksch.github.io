@@ -10,3 +10,12 @@ platforms = ["linux-64", "osx-arm64"]
 
 [dependencies]
 hugo = ">=0.154.5,<0.155"
+
+[feature.lint.dependencies]
+pre-commit = "*"
+
+[feature.lint.tasks]
+pre-commit-run = "pre-commit run -a"
+
+[environments]
+default = ["default", "lint"]
