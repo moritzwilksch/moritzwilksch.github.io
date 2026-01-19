@@ -10,6 +10,7 @@ I work at [QuantCo](https://quantco.com), where I help our clients leverage mach
 
 ## 🔎 Interests
 
+- AI Engineering, especially building knowledge-work agents
 - learning on tabular data
 - natural language processing
 - machine learning engineering on the modern data stack
