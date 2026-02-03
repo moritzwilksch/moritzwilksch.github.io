@@ -7,6 +7,7 @@ channels = ["conda-forge"]
 platforms = ["linux-64", "osx-arm64"]
 
 [tasks]
+serve = "hugo server -D"
 
 [dependencies]
 hugo = ">=0.154.5,<0.155"

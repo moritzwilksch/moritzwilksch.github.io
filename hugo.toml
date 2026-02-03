@@ -18,8 +18,8 @@ name = "About"
 url = "/about"
 
 [[params.profileMode.buttons]]
-name = "TILs"
-url = "/tils"
+name = "Blog"
+url = "/blog"
 
 [[params.profileMode.buttons]]
 name = "Github"
