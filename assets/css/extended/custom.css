@@ -1,0 +1,12 @@
+.figure-80 img,
+.img-80 img {
+  width: 80%;
+  max-width: 100%;
+  height: auto;
+  display: block;
+  margin: 0 auto;
+}
+
+:root {
+  --main-width: clamp(720px, 60vw, 900px);
+}
