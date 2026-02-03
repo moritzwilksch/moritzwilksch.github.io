@@ -1,5 +1,5 @@
 ---
-title: "TILs"
+title: "Blog"
 layout: "list"
 summary: "archives"
 ---
