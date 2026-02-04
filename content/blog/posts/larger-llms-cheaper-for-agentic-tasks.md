@@ -40,21 +40,27 @@ Turns out, this works! A typical trajectory for the agent solving the task looks
 
 ## Efficiency and Token Usage
 
-Now, for the question that led me to run this experiment: How efficient are different models at solving this task? I tested `gemini-3-flash-preview`, `gemini-3-pro-preview`, and `gpt-5.2` in their default configurations, with 10 rollouts per model. I averaged token usage, number of turns until completion, number of tool calls per turn, and cost.
+Now, for the question that led me to run this experiment: How efficient are different models at solving this task? I tested `gemini-2.5-flash`, `gemini-3-flash-preview`, `gemini-2.5-pro`, `gemini-3-pro-preview`, `gpt-5.2-pre-feb` (before OpenAI announced 40% inference speed improvement), `gpt-5.2`, and `kimi-k2.5` in their default configurations, with 10 rollouts per model. I averaged token usage, number of turns until completion, number of tool calls per turn, and cost.
 
 | **Model**                | **Tokens (In / Cached / Out)** | **Avg. Turns** | **Tool Calls / Turn** | **Avg. Duration** | **Avg. Cost** |
 | ------------------------ | ------------------------------ | -------------- | --------------------- | ----------------- | ------------- |
+| `gemini-2.5-flash`       | 91,591 / 9,791 / 4,467         | 10.9           | 0.89                  | 54.7s             | $0.039        |
 | `gemini-3-flash-preview` | 99,182 / 5,823 / 6,028         | 8.7            | 1.26                  | 86.1s             | $0.068        |
+| `gemini-2.5-pro`         | 46,146 / 0 / 3,294             | 10.7           | 1.21                  | 69.2s             | $0.091        |
 | `gemini-3-pro-preview`   | 42,666 / 0 / 5,179             | 6.4            | 1.27                  | 94.5s             | $0.147        |
-| `gpt-5.2`                | 30,331 / 18,265 / 801          | 5.6            | 1.53                  | 55.5s             | $0.068        |
+| `gpt-5.2-pre-feb`        | 30,331 / 18,265 / 801          | 5.6            | 1.53                  | 55.5s             | $0.068        |
+| `gpt-5.2`                | 24,082 / 16,345 / 784          | 5.1            | 1.56                  | 62.7s             | $0.056        |
+| `kimi-k2.5`              | 71,053 / 39,117 / 2,149        | 8.9            | 1.16                  | 132.8s            | $0.073        |
 
 ## Per-token pricing can be misleading
 
 A few interesting observations:
 
-1. The model with the lowest per-token price, `gemini-3-flash-preview`, ends up costing us exactly the same as `gpt-5.2` for this task. That is counterintuitive if you look only at pricing ($0.5/$3 vs. $1.75/$14 per million input/output tokens). The smaller model struggles to issue multiple tool calls in a single turn, requires more turns to finish, and consumes more than 3x the input tokens compared to the smarter, more efficient model.
-2. OpenAI's `gpt-5.2` makes more tool calls while using fewer output tokens, which puts it on par with Flash in cost and even faster in end-to-end latency.
-3. Google's implicit prompt caching is severely broken. It sometimes triggers at random, then fails completely during a full rollout. This happens in both AI Studio and the VertexAI API and seems to be widespread yet unfixed.
+1. The current cheapest per-token model, `gemini-3-flash-preview`, does not deliver the lowest total cost. Despite good per-token pricing, it ends up matching `gpt-5.2-pre-feb` at $0.068 and costing more than the February update to `gpt-5.2` at $0.056. The gap comes from higher input token usage, more turns, and lower tool calling efficiency per turn.
+2. OpenAI's `gpt-5.2` variants are the most efficient overall. They finish in the fewest turns, make the most tool calls per turn, and manage to cache most input tokens, which results in both lower total cost and faster end-to-end latency than Gemini Flash.
+3. Gemini Pro models use fewer input tokens, but lack prompt caching and have longer runtimes, which makes them the most expensive options in this benchmark.
+4. `kimi-k2.5` caching works quite well despite using OpenRouter which proxies requests to multiple providers. Still, it has by far the longest execution time.
+5. Google's implicit prompt caching is severely broken. It sometimes triggers at random, then fails completely during a full rollout. This happens in both AI Studio and the VertexAI API and seems to be widespread yet unfixed.
 
 # Conclusion
 
