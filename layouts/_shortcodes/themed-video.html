@@ -1,0 +1,35 @@
+{{- /* Plays <src>-light.mp4 or <src>-dark.mp4 (posters: <src>-*.webp) to match the site theme.
+       The src is set by script so only the matching video downloads. */ -}}
+{{- $src := .Get "src" -}}
+{{- $label := .Get "label" -}}
+<figure class="themed-video">
+  <video autoplay loop muted playsinline aria-label="{{ $label }}" data-themed-src="{{ $src }}"></video>
+  <noscript>
+    <video autoplay loop muted playsinline aria-label="{{ $label }}" poster="{{ $src }}-light.webp" src="{{ $src }}-light.mp4"></video>
+  </noscript>
+  {{- with .Get "caption" }}
+  <figcaption>{{ . | markdownify }}</figcaption>
+  {{- end }}
+</figure>
+{{- if not (.Page.Store.Get "themed-video-script") }}
+{{- .Page.Store.Set "themed-video-script" true }}
+<script>
+  (() => {
+    const apply = () => {
+      const theme = document.documentElement.dataset.theme === "dark" ? "dark" : "light";
+      for (const video of document.querySelectorAll("video[data-themed-src]")) {
+        const base = video.dataset.themedSrc;
+        if (video.getAttribute("src") === `${base}-${theme}.mp4`) continue;
+        video.poster = `${base}-${theme}.webp`;
+        video.src = `${base}-${theme}.mp4`;
+        video.play().catch(() => {});
+      }
+    };
+    document.addEventListener("DOMContentLoaded", apply);
+    new MutationObserver(apply).observe(document.documentElement, {
+      attributes: true,
+      attributeFilter: ["data-theme"],
+    });
+  })();
+</script>
+{{- end }}

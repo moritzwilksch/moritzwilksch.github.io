@@ -63,11 +63,11 @@ Once the diff is open, you can move between lines, hunks, and files with Vim-sty
 
 But reading the changed lines is only part of a review. To judge a new function call, we often need to see what it calls and who else uses it. diffle uses language servers installed on your machine to bring that context into the diff. Hover a symbol for its signature and documentation, jump to its definition, or find its references. You can peek at each reference with the surrounding code before deciding where to go next.
 
-<!-- TODO: LSP demo -->
+{{< themed-video src="/images/blog/diffle/lsp" label="Hovering verify_record shows its signature and docstring; Find references lists every call, and Space peeks at each one before jumping." >}}
 
 When you find something to change, leave a comment on a line, a block, or the whole file. Press `yy` to copy all your comments as one Markdown prompt, with the file paths, line ranges, and quoted code. Paste it into your coding agent, and it gets each comment with the code it refers to. No more "pls fix this one nullable arg in the run_something method in the domain layer".
 
-<!-- TODO: demo of commenting and copying the prompt -->
+{{< themed-video src="/images/blog/diffle/comment" label="Clicking a line number opens a comment box; after posting it, the Copy all button copies every comment as one prompt." >}}
 
 You can try it in any Git repository:
 

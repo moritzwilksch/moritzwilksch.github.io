@@ -39,3 +39,12 @@
   font-size: 14px;
   font-weight: normal;
 }
+
+.themed-video video {
+  display: block;
+  width: 100%;
+  height: auto;
+  aspect-ratio: 1920 / 1200;
+  border: 1px solid var(--border);
+  border-radius: 8px;
+}
