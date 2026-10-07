@@ -10,3 +10,41 @@
 :root {
   --main-width: clamp(720px, 60vw, 900px);
 }
+
+.themed-figure .themed-dark,
+[data-theme="dark"] .themed-figure .themed-light {
+  display: none;
+}
+
+[data-theme="dark"] .themed-figure .themed-dark {
+  display: block;
+}
+
+@media (prefers-color-scheme: dark) {
+  [data-theme="auto"] .themed-figure .themed-light {
+    display: none;
+  }
+
+  [data-theme="auto"] .themed-figure .themed-dark {
+    display: block;
+  }
+}
+
+/* Screenshots carry ~5.6% (of width) transparent shadow padding below the window;
+   pull the caption up into it so it sits under its own image. */
+.md-content .themed-figure > figcaption {
+  margin: -4% 0 0;
+  text-align: center;
+  color: var(--secondary);
+  font-size: 14px;
+  font-weight: normal;
+}
+
+.themed-video video {
+  display: block;
+  width: 100%;
+  height: auto;
+  aspect-ratio: 1920 / 1200;
+  border: 1px solid var(--border);
+  border-radius: 8px;
+}
