@@ -1,0 +1,11 @@
+{{- /* Renders <src>-light.<ext> or <src>-dark.<ext> to match the site theme. */ -}}
+{{- $src := .Get "src" -}}
+{{- $ext := .Get "ext" | default "png" -}}
+{{- $alt := .Get "alt" -}}
+<figure class="themed-figure">
+  <img class="themed-light" src="{{ printf "%s-light.%s" $src $ext }}" alt="{{ $alt }}" loading="lazy">
+  <img class="themed-dark" src="{{ printf "%s-dark.%s" $src $ext }}" alt="{{ $alt }}" loading="lazy">
+  {{- with .Get "caption" }}
+  <figcaption>{{ . | markdownify }}</figcaption>
+  {{- end }}
+</figure>

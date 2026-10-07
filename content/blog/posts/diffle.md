@@ -7,19 +7,25 @@ summary: "diffle is a local, browser-based diff viewer with Vim-style navigation
 tags: ["diffle", "code-review", "agents", "devtools", "git"]
 ---
 
-_My friend [Pavel](https://pavel.pink) and I built diffle together, so "we" in this post means the two of us._
+diffle opens your branch's diff in the browser. It adds Vim-style navigation, hover and go-to-definition from your local language servers, and line comments you can copy into a coding agent as one prompt. My friend [Pavel](https://pavel.pink) and I built it because agents now write most of our code, and reviewing that code is where our time goes.
 
-Coding agents have gotten good at producing a lot of code. In our experience (September 2026), their design choices and the code's long-term maintainability don't always meet the mark. We think developers should still be in the driver's seat when writing high-stakes software. With coding agents, that can mean reviewing the generated interfaces and how components work together before merging a diff.
+## Why we built it
+
+Coding agents have gotten good at producing a lot of code. As of September 2026, their design choices and the code's long-term maintainability don't always hit the mark. We think developers should still be in charge when writing high-stakes software. With coding agents, that can mean reviewing the generated interfaces and how components work together before merging a diff.
 
 That changes where we spend our time. We used to spend most of it in IDEs we'd spent countless hours customizing to make writing code feel smooth. Today, we generate most of our code through agent interfaces such as Claude Code or Codex. These work well for _generating_ code, but most don't offer a good interface for _reviewing_ it.
 
 Claude and Codex recently added features for viewing and commenting on diffs. That's better than reviewing code in a chat window.
 
-<!-- TODO: screenshots of Claude and Codex diff viewers -->
+{{< themed-figure src="/images/blog/diffle/claude-code" alt="Claude Code's /diff panel in the terminal" caption="Claude Code's /diff panel in the terminal" >}}
+
+{{< themed-figure src="/images/blog/diffle/claude" alt="The Claude desktop app's diff view" caption="The Claude desktop app's diff view" >}}
+
+{{< themed-figure src="/images/blog/diffle/chatgpt" alt="The Codex app's Changes view" caption="The Codex app's Changes view" >}}
 
 But reviewing code also takes context and an interface that makes it easy to move through the changes. IDEs have long been good at this. We just don't want to launch a full IDE every time we want to review a diff.
 
-That's why we built diffle, a diff viewer designed around human code review.
+So we built diffle, a diff viewer designed around human code review.
 
 ## Why another diff viewer?
 
@@ -47,7 +53,7 @@ Of these tools, [difit](https://github.com/yoshiko-pg/difit) comes closest to wh
 But difit gives reviewers limited context, much like GitHub's pull request view.
 Then we came across [diffshub.com](https://diffshub.com) by [The Pierre Computer Company](https://pierre.computer/) and thought to ourselves: What if our local diff viewer felt just as snappy and polished?
 
-## Enter: `diffle`
+## How diffle works
 
 We built our first local diff viewer with [Diffs](https://diffs.com/), the open-source components from [The Pierre Computer Company](https://pierre.computer/). We used it for our own work from day one and quickly added the features we wanted, starting with Vim-like keyboard navigation and LSP support.
 
