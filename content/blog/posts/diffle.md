@@ -7,7 +7,7 @@ summary: "diffle is a local, browser-based diff viewer with Vim-style navigation
 tags: ["diffle", "code-review", "agents", "devtools", "git"]
 ---
 
-diffle opens your branch's diff in the browser. It adds Vim-style navigation, hover and go-to-definition from your local language servers, and line comments you can copy into a coding agent as one prompt. My friend [Pavel](https://pavel.pink) and I built it because agents now write most of our code, and reviewing that code is where our time goes.
+[diffle](https://github.com/moritzwilksch/diffle) opens your branch's diff in the browser. It adds Vim-style navigation, hover and go-to-definition from your local language servers, and line comments you can copy into a coding agent as one prompt. My friend [Pavel](https://pavel.pink) and I built it because agents now write most of our code, and reviewing that code is where our time goes.
 
 ## Why we built it
 
